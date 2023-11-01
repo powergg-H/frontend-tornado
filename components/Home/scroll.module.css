@@ -1,0 +1,146 @@
+  .scrollable-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .item {
+      width: 5rem;
+      /* height: 1rem; */
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 1.1rem;
+      color: darkgray;
+    }
+    @media (min-width: 468px) {
+      .item {
+        width: 9rem;
+      }
+    }
+  }
+.scrollable-wrapper-content{
+ 
+  padding-left: 2%;
+  font-size: 1.2rem;
+  color: rgba(0,0,0,.65);
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+.scrollable-wrapper-ul{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: rgba(0,0,0,.65);
+  padding: 2% 8% 2% 2%;
+}
+.scrollable-wrapper-ol{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.scrollable-wrapper-li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0,0,0,.8);
+}
+
+.sliderBox{
+  height: 100%;
+  
+}
+.card-title-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  >span{
+    color: #31B7D3;
+    cursor: pointer;
+  }
+}
+.card-title{
+
+  font-size: 1.1rem;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  padding: 0 3%;
+  gap: 10px;
+}
+.logoImg{
+  width: 2rem;
+  height: 2rem;
+  background: url("/logo64.png") center center no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.content-box{
+ display: flex;
+ flex-direction: column;
+ height: 4rem;
+ overflow: hidden;
+ position: relative;
+  .box-white{
+    display: flex;
+    >ol{
+       width:60%;
+       margin-right: 5px;
+      >li{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    >dl{
+      flex:1;
+      text-align: center;
+     
+      >span{
+        padding: 0.5rem;
+        border-radius: 15px;
+        background: #F0F2F5;
+        color: #31B7D3;
+        font-size:1rem;
+        cursor: pointer;
+      }
+    }
+ }
+}
+.look_detail{
+  position: absolute;
+  right: 0;
+ bottom: 0;
+}
+.detail-header{
+  padding: 5% 0;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.detail-content{
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  div{
+    color: rgba(0,0,0,.65);
+  }
+  ol{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  ul{
+    margin-top: 1rem;
+  }
+  li{
+    color: rgba(0,0,0,.65);
+  }
+}

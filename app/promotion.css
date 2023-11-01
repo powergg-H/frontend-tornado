@@ -1,0 +1,284 @@
+.promotion_page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    .promotion_header {
+        font-size: 1.5rem;
+        display: flex;
+        height: 5rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .promotion_banner {
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2vh;
+
+        .promotion_banner_left {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            >h1 {
+                font-size: 5vh;
+            }
+
+            >p {
+                font-size: 2.3vh
+            }
+        }
+
+        .promotion_banner_right {
+            .promotion_banner_img {
+                height: 100%;
+                width: 15vh;
+                background: url("/banner.png") no-repeat center center;
+                background-size: 100% 100%;
+            }
+        }
+    }
+
+    .promotion_main {
+        flex: 1;
+        width: 100%;
+
+        .promotion_main_box {
+            color: #000;
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            width: 95%;
+            margin: 0 auto;
+            overflow-y: auto;
+            gap: 20px;
+
+            .promotion_main_box_top {
+                height: 6rem;
+                background: #fff;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                padding: 0 2%;
+
+                .promotion_main_box_top_header {
+                    flex: 1;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    font-size: 0.7rem;
+                    border-bottom: solid 1px rgba(0, 0, 0, .2);
+
+                    >li {
+                        >span {
+                            color: #FF9338;
+                        }
+                    }
+
+                    >span {
+                        display: inline-block;
+                        width: 2px;
+                        height: 30%;
+                        background: #979797;
+                    }
+                }
+
+                .promotion_main_box_top_main {
+                    flex: 2;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1rem;
+
+                    >div {
+                        width: 100%;
+                        height: 80%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+
+                        button {
+                            font-size: 1rem;
+                            color: #31B7D3;
+                            border: none;
+                        }
+
+                    }
+
+                }
+            }
+
+            .promotion_main_box_bottom {
+
+                flex: 1;
+                background: #fff;
+                border-radius: 15px;
+                padding: 0 2%;
+
+                .adm-tabs {
+                    height: 100%;
+
+                    .adm-tabs-content {
+                        height: 100%;
+                        overflow-x: hidden;
+
+                        li {
+                            height: 10rem;
+                        }
+                    }
+                }
+
+                .tab_history {
+                    height: 52vh;
+                    overflow-y: auto;
+                    margin-right: -30px;
+
+                    >h2 {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 1rem;
+                    }
+
+                    .content_box {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 0.8rem;
+                        margin-top: 10px;
+                    }
+
+                    .content1 {
+                        flex: 2;
+                        text-align: left;
+                    }
+
+                    .content2 {
+                        flex: 1;
+                        text-align: left;
+                    }
+
+                    .content3 {
+                        flex: 1;
+                        text-align: left;
+                    }
+
+                    .history_box {
+                        display: flex;
+                        height: 4rem;
+                        align-items: center;
+                        font-size: 0.8rem;
+
+                        .history1 {
+                            flex: 2;
+                            display: flex;
+                            flex-direction: column;
+
+                            >b {
+                                color: rgba(0, 0, 0, .6);
+                                font-weight: 500;
+                            }
+
+                            >span {
+                                font-size: 0.8rem;
+                                color: rgba(0, 0, 0, .35);
+                            }
+                        }
+
+                        .history2 {
+                            flex: 1
+                        }
+
+                        .history3 {
+                            flex: 1
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .adm-tabs-tab {
+            font-size: 1rem !important;
+        }
+    }
+
+    .promotion_footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 5.2rem;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 0px 10px 1px;
+
+        .promotion_footer_left {
+            color: #000;
+            font-weight: 600;
+            font-size: 2vh;
+            b {
+                color: #31B7D3;
+            }
+        }
+    }
+    .amout_styles {
+        :first-child {
+            flex: 1
+        }
+    }
+}
+
+
+
+
+/* 暗黑 */
+.promotion_page_dark {
+    .promotion_main_box_top {
+        background: #3E4652 !important;
+        color: #fff;
+    }
+
+    .promotion_main_box_top_main {
+        button {
+            background: #2C333D !important;
+            border: none;
+        }
+    }
+
+    .promotion_main_box_bottom {
+        background: #3E4652 !important;
+        color: rgba(255, 255, 255, .6) !important;
+
+        .adm-tabs-tab {
+            color: #fff !important;
+        }
+
+
+        span {
+            color: rgba(255, 255, 255, .6) !important;
+        }
+
+        b {
+            color: rgba(255, 255, 255, .6) !important;
+        }
+    }
+
+    .promotion_footer {
+        background: #2F343D !important;
+
+        .promotion_footer_left {
+            span {
+                color: #fff;
+            }
+        }
+    }
+}

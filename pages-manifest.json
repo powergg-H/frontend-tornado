@@ -1,0 +1,6 @@
+{
+  "/_app": "es/_app.js",
+  "/_error": "es/_error.js",
+  "/home": "es/home.js",
+  "/_document": "es/_document.js"
+}

@@ -1,0 +1,78 @@
+.currency-selector {
+  height: 3rem;
+  border-radius: 1.5rem;
+  background-color: #e9ecf2;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 110%;
+  margin-bottom: 1rem;
+  /* background-color: #f00; */
+}
+
+.exchangeInputBox {
+  position: relative;
+  .item {
+    background-color: #f00;
+    background: #f5f7fa;
+    border-radius: 3rem;
+    padding: 0.75rem 1rem;
+  }
+  .direction {
+    position: absolute;
+    left: 25%;
+    top: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 0.5rem;
+  }
+  .inputNumber {
+    width: 3.5rem;
+    height: 2rem;
+    padding: 0 .75rem;
+    background: #ffffff;
+    border-radius: 44px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+/* Relay下拉选择 */
+.select_mode {
+  display: flex;
+
+  .left {
+    flex: 1
+  }
+
+  .right {
+    width: 1rem;
+    background: red;
+  }
+}
+
+.relay_click {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.outlin_right {
+ 
+}
+.icon_address{
+  width:2rem;
+  display: flex;
+  justify-content: center;
+}
+.font-drak{
+  color: #000;
+  >input{
+    color: #000;
+  }
+}
